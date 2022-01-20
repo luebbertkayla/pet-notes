@@ -1,0 +1,16 @@
+
+<% @pet.img %><br>
+  <h2 style="text-align:center" class="bg-primary"> <strong><%= @pet.name %> - <%= @pet.breed %></strong></h2>
+  
+  <h3><strong>Info:</strong><br>
+  <h4>My pet eats: <%= @pet.nutrition %></h4>
+  <h4>My pet is fed: <%= @pet.feedings %></h4>
+  <h3><strong>Notes:<strong></h3>
+  <h4> <%= @pet.notes %></h4>
+<div class="button-container">
+    <h3><a href="/pets/<%= @pet.id %>/edit">Edit</a></h3>
+    <h3>&nbsp; | &nbsp;</h3>
+    <h3><a href="/pets/<%= @pet.id %>/delete">Delete</a></h3>
+    <h3>&nbsp; | &nbsp;</h3>
+    <h3><a href="/users/index">Home</a></h3>
+</div>
