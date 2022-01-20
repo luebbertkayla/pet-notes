@@ -4,6 +4,8 @@ Pet Notes is a Sinatra app that lets users add Pet Profiles. Users have the abil
 
 The Home Page displays all of the user's Pet Profiles. From here they can create a new Pet Profile, select which pet's Profile they want to individually view, along with edit or delete the Profile.
 
+![Alt text](https://i.ibb.co/9Yzmcqp/Screen-Shot-2022-01-20-at-5-01-58-PM.png)
+
 ## Installation
 
 1. Clone this repo
@@ -20,5 +22,5 @@ Contributions to the project are welcome on GitHub at https://github.com/luebber
 
 The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
 
-![Alt text](https://i.ibb.co/9Yzmcqp/Screen-Shot-2022-01-20-at-5-01-58-PM.png)
+
 
