@@ -48,19 +48,20 @@ class PetController < ApplicationController
         redirect to "/users/index" 
     end 
 
-    post '/upload' do
-         Check if user uploaded a file
-        if params[:img] && params[:img][:filename]
-          filename = params[:img][:filename]
-          file = params[:img][:tempfile]
-          path = "./public/uploads/#{filename}"
+   # Not functioning yet
+   # post '/upload' do
+       #  Check if user uploaded a file
+        #if params[:img] && params[:img][:filename]
+         # filename = params[:img][:filename]
+         # file = params[:img][:tempfile]
+        #  path = "./public/uploads/#{filename}"
       
-           Write file to disk
-          File.open(path, 'wb') do |f|
-            f.write(file.read)
-          end
-        end
-      end
+          # Write file to disk
+         # File.open(path, 'wb') do |f|
+          #  f.write(file.read)
+         # end
+       # end
+     # end
 
       get '/pets/:slug' do
         @pet = Pet.find_by_slug(params[:slug])
